@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Teachers_app" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#f57c00</item>
+        <item name="colorPrimaryDark">#bb4d00</item>
+        <item name="colorAccent">#ffad42</item>
+    </style>
+    <style name="FloatingHintStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#F13A00</item>
+    </style>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pdfActivity">
+
+    <EditText
+        android:id="@+id/pdfTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="400dp"
+        android:ems="10"
+        android:gravity="start"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:layout_marginBottom="80dp"
+        android:hint="Enter pdf text..." />
+
+    <Button
+        android:id="@+id/savePdfBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pdfTxt"
+        android:layout_marginTop="-60dp"
+        android:layout_centerHorizontal="true"
+        android:text="Save PDF"
+        android:background="@color/colorAccent"
+        android:textAllCaps="false"/>
+</RelativeLayout>
