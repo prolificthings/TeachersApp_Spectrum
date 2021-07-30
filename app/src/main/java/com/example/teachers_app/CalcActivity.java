@@ -111,7 +111,7 @@ public class CalcActivity extends AppCompatActivity {
 
             }
         }
-        else if (input.split("^").length==2){
+        else if (input.split("\\^").length==2){
             String number[] = input.split("\\^");
             try {
                 double pow = Math.pow(Double.parseDouble(number[0]),Double.parseDouble(number[1]));
