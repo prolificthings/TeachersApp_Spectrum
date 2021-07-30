@@ -67,6 +67,7 @@ public class ToDoListActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                add.setBackground(getResources().getDrawable(R.drawable.add2));
                 addTask();
             }
         });
@@ -90,7 +91,9 @@ public class ToDoListActivity extends AppCompatActivity {
 
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
+                cancel.setBackgroundColor(getResources().getColor(R.color.green));
                 alertDialog.dismiss();
             }
         });
@@ -98,6 +101,7 @@ public class ToDoListActivity extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                save.setBackgroundColor(getResources().getColor(R.color.green));
                 String newTask = task.getText().toString();
                 String id = dbRef.push().getKey();
                 String date = DateFormat.getDateInstance().format(new Date());
@@ -189,6 +193,7 @@ public class ToDoListActivity extends AppCompatActivity {
         tdlUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                tdlUpdate.setBackgroundColor(getResources().getColor(R.color.Accent));
                 task = updateTask.getText().toString().trim();
                 String date = DateFormat.getDateInstance().format(new Date());
                 tdlModel model = new tdlModel(task,key,date);
@@ -212,6 +217,7 @@ public class ToDoListActivity extends AppCompatActivity {
         tdlDlt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                tdlDlt.setBackgroundColor(getResources().getColor(R.color.Accent));
                 dbRef.child(key).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {

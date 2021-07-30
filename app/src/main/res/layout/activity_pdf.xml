@@ -25,6 +25,6 @@
         android:layout_marginTop="-60dp"
         android:layout_centerHorizontal="true"
         android:text="Save PDF"
-        android:background="@color/colorAccent"
+        android:background="@color/Accent"
         android:textAllCaps="false"/>
 </RelativeLayout>
