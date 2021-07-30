@@ -11,7 +11,7 @@ public class CalcActivity extends AppCompatActivity {
     Button ac,power,back,one,two,three,four,five,six,seven,eight,nine,zero,divide,into,minus,plus,point,equal,ans;
     private String input="", answer;
     TextView screen;
-    //private boolean clearResult;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,27 +51,27 @@ public class CalcActivity extends AppCompatActivity {
                 input = "";
                 break;
             case"Ans":
-                //clearResult=false;
+
                 input+=answer;
                 break;
             case"x":
-                //clearResult=false;
+
                 solve();
                 input+="*";
                 break;
             case"^":
-                //clearResult=false;
+
                 solve();
                 input+="^";
                 break;
             case"=":
 
                 solve();
-                //clearResult=true;
+
                 answer = input;
                 break;
             case"⬅":
-                //clearResult=false;
+
                 String newTxt = input.substring(0,input.length()-1);
                 input = newTxt;
                 break;
@@ -80,13 +80,10 @@ public class CalcActivity extends AppCompatActivity {
                     input="";
                 }
                 if (data.equals("+")||data.equals("-")||data.equals("/")){
-                    //clearResult=false;
+
                     solve();
                 }
-                /*else if(clearResult){
-                    input="";
-                    clearResult=false;
-                }*/
+
                 input+=data;
         }
         screen.setText(input);
